@@ -170,6 +170,8 @@
 
     .team-cont {
         flex-direction: column;
+        background-image: url('/images/beans-mobile.png');
+
     }
 
     .team-ctn {
@@ -191,6 +193,13 @@
     .local-disc p {
         width: 100%;
         margin-bottom: 0px !important;
+    }
+
+    .container-abt, .container-bot{
+     background-image: url('/images/beans-brownmobile.png');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
     }
 }
 
