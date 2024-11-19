@@ -1,0 +1,248 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 1rem 3rem;
+
+}
+
+.container p {
+    font-family: var(--nunito);
+    font-weight: 400;
+}
+
+.container a {
+    text-decoration: none;
+    font-family: var(--lato);
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: var(--dark-brown);
+    color: var(--light-brown);
+    border: 2px solid var(--dark-brown);
+}
+
+.container a:hover {
+    background-color: var(--light-brown);
+    border: 2px solid var(--dark-brown);
+    color: var(--dark-brown);
+}
+
+.title {
+    font-family: var(--nunito);
+    font-size: clamp(1rem, 0.8673rem + 3.7915vw, 3rem);
+
+    color: var(--dark-brown);
+    text-align: center;
+}
+
+
+/* image responsiveness */
+.hero-ctn {
+     width: 100%;
+    max-width: 1000rem;
+    height: auto;
+    margin-inline: auto;
+}
+
+.hero-ctn img {
+     width: 100%;
+     max-height: 100%;
+    height: auto;
+}
+
+.hero-text {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text p {
+    width: 60%;
+    color: var(--dark-brown);
+}
+
+.hero-text a {
+    padding: 1rem 1rem;
+}
+
+
+/* middle */
+.about {
+    font-family: var(--abril);
+    font-weight: 400;
+    font-size: 3rem;
+    color: var(--dark-brown);
+    margin: 0px;
+    margin-right: auto;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.mid-img {
+     width: 100%;
+     max-width:350px;
+     height: auto;
+}
+
+.mid-img img {
+     width: 100%;
+     height: auto;
+}
+
+.middle p {
+    width: 65%;
+    font-size: 1.2rem;
+    color: var(--dark-brown);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.learn-more {
+    padding: 1rem 2rem;
+    margin-left: 20%;
+    margin-right: auto;
+    border: 2px solid var(--dark-brown);
+}
+
+
+@media (max-width: 500px) {
+
+    .container {
+        margin: 1rem 1rem !important;
+    }
+
+    .hero-ctn img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-text {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .title {
+        font-size: 6vw !important;
+    }
+    .hero-text p {
+        width: 100%;
+        font-size: 3.5vw !important;
+    }
+
+    .hero-text a, .container a {
+        font-size: 3.5vw !important;
+        padding: 2vw 2vw;
+    }
+
+
+    /* middle */
+    .about {
+        font-size: 6vw !important;
+        margin-right: auto;
+    }
+
+    .middle {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0px !important;
+    }
+
+    .mid-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .middle p, .hero-text p{
+        width: 100%;
+        margin: 0.5rem 0.5rem;
+        font-size: 3.2vw !important;
+    }
+
+    .learn-more {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        margin: 1rem 1rem;
+    }
+
+    .hero-ctn {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-ctn img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .hero-text {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .title {
+        font-size: 6vw;
+        text-align: center;
+        margin: 0.5rem 0rem;
+    }
+    .hero-text p {
+        width: 100%;
+        font-size: 2.8vw;
+    }
+
+    .hero-text a, .container a {
+        font-size: 3vw;
+        padding: 2vw 2vw;
+    }
+
+    /* middle */
+    .about {
+        font-size: 2rem;
+        margin: 0.5rem 0rem;
+        margin-right: auto;
+    }
+
+    .middle {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .mid-img {
+        width:100%;
+        height: 95%;
+    }
+
+    .mid-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+
+    .middle p {
+        width: 100%;
+        margin: 0.5rem 0.5rem;
+        font-size: 2.5vw;
+    }
+
+    .learn-more {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+}

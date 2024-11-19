@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('main_page.css');
+@import url('main-about.css');
+@import url('contact.css');
+@import url('footer.css');
+@import url('caffeine.css');
+@import url('testimonials.css');
+
+/* VARIABLES */
+:root {
+    --light-brown: #FFF2D7;
+    --dark-brown: #603F26;
+    --yellow: ;
+    --abril: "Abril Fatface", serif;
+    --nunito: "Nunito", serif;
+    --lato: "Lato", serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-brown);
+}
+
+/* Top Navigation */
+.top-nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-brown);
+    border-bottom: 3px solid var(--dark-brown);
+    padding: 0.5rem 1rem;
+    z-index: 999;
+}
+
+.logo a {
+    font-family: var(--abril);
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-decoration: none;
+    color: var(--dark-brown);
+}
+
+/* Buttons container */
+.buttons ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 0; /* Ensure no default margin on the ul */
+    padding: 0; /* Ensure no default padding on the ul */
+}
+
+.buttons li {
+    list-style: none;
+}
+
+.buttons a , .dropbtn{
+    text-decoration: none;
+    color: var(--dark-brown);
+    font-family: var(--nunito);
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+}
+
+/* Style for links and buttons */
+.buttons a:not(.no-animation)::before,
+.dropbtn::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 2px;
+    width: 100%;
+    background: var(--dark-brown);
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+
+/* Hover effect for links and dropdown button */
+.buttons a:hover::before,
+.dropbtn:hover::before {
+    transform: scaleX(1);
+}
+
+/* Dropdown Menu */
+li.dropdown {
+    position: relative; /* Ensure dropdown positioning */
+}
+
+.dropbtn {
+     position: relative;
+     z-index: 2; /* Adjust as needed */
+     background-color: var(--light-brown);
+     border: none;
+}
+
+.drop-down-cnt {
+     display: none;
+     position: absolute;
+     background-color: var(--light-brown);
+     min-width: 160px;
+     z-index: 1;
+}
+
+.drop-down-cnt.show {
+     display: block;
+}
+
+.drop-down-cnt a {
+    color: var(--dark-brown) !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* Navbar Toggle */
+.navbar-toggle {
+    display: none; /* Hide toggle by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggle span {
+     height: 4px;
+     width: 25px;
+     background-color: var(--dark-brown);
+     margin: 3px 0;
+     transition: 0.5s;
+}
+
+.change .bar1 {
+  transform: translate(0, 8px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -10px) rotate(45deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 488px) {
+    .buttons ul{
+        display: none; /* Hide buttons on small screens */
+        flex-direction: column; /* Stack vertically */
+        align-items: flex-start;
+        width: 100%; /* Full width */
+        background-color: var(--dark-brown);
+        position: absolute;
+        top: 200px !important; /* Adjust based on your navbar height */
+        left: 0;
+        padding: 1.5rem 2rem; /* Padding for the dropdown */
+    }
+
+    .buttons.active ul {
+        display: flex; /* Show buttons when active */
+    }
+
+    .top-nav a {
+        margin-left: 2px;
+    }
+    .navbar-toggle {
+        margin-left: auto;
+        display: flex; /* Show the burger menu */
+    }
+
+    .navbar-toggle span {
+        height: 3px;
+        width: 25px;
+        background-color: var(--dark-brown);
+        margin: 3px 0;
+    }
+
+    .buttons a {
+        color: var(--light-brown);
+    }
+
+    .dropbtn {
+     background-color: var(--dark-brown);
+     color: var(--light-brown);
+    }
+
+    .logo a {
+        font-size: 1.5rem !important;
+    }
+
+}
+
+@media (max-width: 820px) {
+    .buttons ul {
+        display: none; /* Hide buttons on small screens */
+        flex-direction: column; /* Stack vertically */
+        align-items: flex-start;
+        width: 100%; /* Full width */
+        background-color: var(--dark-brown);
+        position: absolute;
+        top: 50px !important; /* Adjust based on your navbar height */
+        left: 0;
+        padding: 1.5rem 2rem; /* Padding for the dropdown */
+    }
+
+    .buttons.active ul {
+        display: flex; /* Show buttons when active */
+    }
+
+    .top-nav a {
+        margin-left: 2px;
+    }
+
+    .navbar-toggle {
+        margin-left: auto;
+        display: flex; /* Show the burger menu */
+    }
+
+    .navbar-toggle span {
+        height: 3px;
+        width: 25px;
+        background-color: var(--dark-brown);
+        margin: 3px 0;
+    }
+
+    .buttons a {
+        color: var(--light-brown);
+    }
+
+    .dropbtn {
+          background-color: var(--dark-brown);
+          color: var(--light-brown);
+    }
+
+    .logo a {
+        font-size: 2rem; /* Adjust this if needed for mobile */
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Lustrio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+
+</head>
+<body>
+     <div class="top-nav">
+          <div class="logo">
+               <a href="/index.html">Lustrio</a>
+          </div>
+          <div class="navbar-toggle" id="navbar-toggle" onclick="myFunction(this)">
+               <span class="bar1"></span>
+               <span class="bar2"></span>
+               <span class="bar3"></span>
+          </div>
+          <div class="buttons">
+               <ul id="navbar-links">
+                    <li><a href="/index.html" >Home</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li class="dropdown">
+                         <button class="dropbtn" onclick="dropDown()">Dropdown
+                             <i class="fa fa-caret-down"></i>
+                         </button>
+                         <div class="drop-down-cnt" id="myDropdown">
+                             <a href="snacks.html" class="no-animation">Snacks</a>
+                             <a href="caffeine.html" class="no-animation">Caffeine</a>
+                         </div>
+                     </li>                     
+                    <li><a href="contact.html">Contact</a></li>
+               </ul>
+          </div>
+     </div>
+     <!-- End Navigation Bar -->
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="title">Crafted with Care, Brewed with Passion</h1>
+
+        <div class="hero-ctn">
+            <img src="/images/hero-pic.svg" alt="" class="myhero" loading="lazy">
+        </div>
+
+        <div class="hero-text">
+            <p>In every hardship lies the seed of success. At Café Lustrio, we believe that challenges are the stepping stones to greatness. Each cup of coffee we brew is a testament to resilience, passion, and the pursuit of excellence.</p>
+            <a href="">OUR PRODUCTS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="about">About us</h1>
+
+        <div class="middle">
+            <p>Café Lustrio is dedicated to supporting local farmers and sourcing premium beans from regions like Benguet, Mt. Apo, and Mt. Kitanglad, celebrating the Philippines coffee heritage. As a community hub, we showcase local artisans and partner with social enterprises to promote sustainability and cultural pride. At Lustrio, coffee is a connection, and we offer a warm, welcoming space that reflects Filipino hospitality. Join us to enjoy homegrown flavors and support local communities, either in-store or online.</p>     
+
+            <div class="mid-img">
+                <img src="/images/about-img-1.svg" alt="" loading="lazy">
+            </div>
+        </div>
+
+        <a href="/about-us.html" class="learn-more">LEARN MORE</a>
+    </div>
+
+    <div class="foot-wrap">
+        <div class="footer-ctn">
+            <div class="col-1">
+               <span class="footer-title">Lustrio</span>
+               <span class="footer-disc">Crafted with Care, Brewed with Passion</span>
+               <span class="icons">
+                    <a href=""><img src="/images/facebook-icon.svg" alt=""></a>
+                    <a href=""><img src="/images/Instagram.svg" alt=""></a>
+                    <a href=""><img src="/images/tiktok-logo.svg" alt=""></a>
+               </span>
+            </div>
+            <div class="footers-col">
+               <div class="col-2">
+                    <span>About us</span>
+                    <a href="">Mission</a>
+                    <a href="">Meet our Team</a>
+               </div>
+
+               <div class="col-3">
+                    <span>Support</span>
+                    <a href="">Contact</a>
+                    <a href="">Costumer Support</a>
+               </div>
+          </div>
+        </div>
+        
+        <div class="hr-line"></div>
+
+        <span class="credits">© 2024 Café Lustrio. All rights reserved.</span>
+    </div>
+
+    <!-- always add this to new html file!!! -->
+    <script src="/script/burger.js"></script>
+</body>
+</html>
