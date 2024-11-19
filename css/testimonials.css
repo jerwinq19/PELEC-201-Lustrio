@@ -17,7 +17,7 @@
 }
 
 .tite {
-     background-image: url('images/testimonials-bg.png');
+     background-image: url('/images/testimonials-bg.png');
      background-repeat: no-repeat;
      background-position: center;
 }
