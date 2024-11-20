@@ -21,6 +21,7 @@
      display: flex;
      justify-content: center;
      gap: 2rem;
+     width: 100%;
      padding: 7vh 1vh;
      background-image: url('../images/contact-page-bg.png');
      background-size: cover;
@@ -31,6 +32,8 @@
 
 .contact-details {
      display: flex;
+     width: calc(50vw + 1rem);
+     height: auto;
      flex-direction: column;
      justify-content: space-evenly;
      border: 2.5px solid var(--dark-brown);
@@ -50,6 +53,7 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     width: calc(30vw + 1rem);
      gap: 1rem;
 }
 
@@ -63,7 +67,6 @@
 .form-img img {
      max-width: 100%;
      height: auto;
-     
      border-radius: 0rem 2rem 0rem 2rem;
 
 }
@@ -95,8 +98,13 @@
 .myForm button {
      margin-right: auto;
      margin-left: auto;
-     padding: 0.3rem;
+     padding: 0.5rem;
      width: 50%;
+     background-color: var(--dark-brown);
+     border: none;
+     color: var(--light-brown);
+     font-family: var(--lato);
+     font-size: 1vw;
 }
 
 
