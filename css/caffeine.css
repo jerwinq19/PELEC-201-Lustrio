@@ -10,7 +10,7 @@
      background-color: var(--dark-brown);
      padding: 2rem 2rem;
      width: 100%;
-     height: 55vw;
+     height: 53vw;
      border: 2px solid var(--light-brown);
      font-family: var(--nunito);
      border-radius: 1.5rem;
@@ -48,13 +48,13 @@
 }
 
 .flip-front h1, .flip-back h1{
-     font-size: 2.5vw;
+     font-size: 2.4vw;
      margin-bottom: 2vw;
 }
 
 .flip-front p, .flip-back p{
      margin: 1vw 1.5vw;
-     font-size: 1.5vw;
+     font-size: 2.5vh;
      text-align: justify;
 }
 
