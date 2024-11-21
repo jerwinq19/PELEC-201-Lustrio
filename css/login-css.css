@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 :root {
     --light-brown: #FFF2D7;
@@ -6,5 +7,177 @@
     --abril: "Abril Fatface", serif;
     --nunito: "Nunito", sans-serif;
     --lato: "Lato", sans-serif;
+    --nunito-sans: "nunito-sans", sans-serif;
 }
 
+.log-in-page {
+     box-sizing: border-box;
+     width: 100%;
+     background-color: var(--dark-brown);
+     margin: 0px;
+}
+
+#mybtn a{
+     color: var(--light-brown);
+     text-decoration: none;
+}
+
+.my-container {
+     display: flex;
+     justify-content: space-between;
+     height: 100vh;
+}
+
+
+.form-cont {
+     width: 50%;
+     background-color: var(--light-brown);
+     padding: 2vw 4.5vw;
+     color: var(--dark-brown);
+     font-family: var(--nunito);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: auto;
+}
+
+.form-cont h1 {
+     font-family: var(--nunito-sans);
+     font-size: 4vw;
+     width: 80%;
+     font-weight: 800;
+     margin: 0px;
+}
+
+.form-cont p {
+     font-size: 1.2vw;
+     width: 90%;
+     margin: 0px;
+}
+
+
+.form-cont > form {
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+     font-size: 1.5vw;
+     margin-top: 1.5rem;
+}
+
+.myform > input {
+     padding: 1vw;
+     border: 3px solid var(--dark-brown);
+     border-radius: 10px;
+     background-color: transparent;
+     font-size: 1.2vw;
+}
+
+.myform > input:focus {
+     border-color: var(--dark-brown);
+     box-shadow: 0 0 5px rgba(255, 152, 0, 0.5); /* Optional glowing effect */
+}
+
+
+.form-cont button {
+     padding: 1vw;
+     margin-top: 10px;
+     background-color: var(--dark-brown);
+     border: none;
+     color: var(--light-brown);
+     font-size: 1.4vw;
+     font-family: var(--nunito);
+     font-weight: 800;
+     border: 3px solid var(--dark-brown);
+     border-radius: 10px;
+     margin-bottom: 1rem;
+}
+
+.inline-box {
+     display: inline-flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.inline-box a{
+     text-decoration: none;
+     font-size: 1.2vw;
+     color: var(--dark-brown);
+}
+
+.inline-box > span{
+     display: inline-flex;
+}
+
+.line {
+     border-bottom: 2px solid var(--dark-brown);
+     width: 100%;
+     margin: 10px 0px;
+}
+
+.register a{
+     color: var(--dark-brown);
+}
+
+.log-img {
+     width: 50%;
+     height:100vh;
+     background-image: url('/images/login-pic.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+/* MEDIA QUERIES */
+/* Tablet: max-width 768px */
+@media (max-width: 768px) {
+
+}
+ 
+ /* Mobile: max-width 480px */
+@media (max-width: 480px) {
+
+     .my-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: var(--light-brown);
+     }
+
+     .form-cont {
+          width: 110%;
+          height: auto;
+          padding: 2rem;
+          background-color: transparent;
+     }
+
+     .log-img {
+          display: none;
+     }
+
+     .form-cont h1 {
+          font-size: 8.5vw; 
+          width: 100%;
+     }
+
+     .form-cont p {
+          font-size: 3.5vw;
+          width: 100%;
+     }
+
+     .myform label ,  .inline-box a{
+          font-size: 3.5vw !important;
+          color: var(--light-brown);
+     }
+
+     .myform > input {
+          font-size: 3.5vw;
+          padding: 2.5vw;
+     }
+     
+     .form-cont button {
+          font-size: 4vw; 
+          padding: 2vw;
+     }
+  
+
+}

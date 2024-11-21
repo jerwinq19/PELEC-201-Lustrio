@@ -104,7 +104,16 @@
      border: none;
      color: var(--light-brown);
      font-family: var(--lato);
-     font-size: 1vw;
+     font-size: 1.3vw;
+     display: flex; 
+     align-items: center; 
+     justify-content: center;
+     font-family: var(--Lato);
+     border-radius: 1rem;
+}
+ 
+.myForm button i {
+     margin-left: 0.7rem;
 }
 
 

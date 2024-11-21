@@ -1,12 +1,12 @@
 /* Importing Google Font - Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-} */
+}
 
 
 
@@ -83,7 +83,6 @@
   font-size: 1.15rem;
   color: #e3e3e3;
   font-weight: 500;
-  /* margin: 14px 0 40px; */
 }
 
 
