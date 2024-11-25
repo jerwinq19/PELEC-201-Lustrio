@@ -45,6 +45,27 @@ body {
     z-index: 999;
 }
 
+.icon-link i{
+     display: inline-block; /* Makes the icon clickable */
+     text-decoration: none; /* Removes the underline */
+     color: var(--dark-brown); /* Icon color */
+     font-size: 2rem;
+     transition: color 0.3s ease, transform 0.2s ease;
+     padding-left: 1rem; 
+     border-left: 2px solid var(--dark-brown);
+}
+ 
+.icon-link:hover {
+     color: var(--light-brown); /* Change color on hover */
+     transform: scale(1.1); /* Slight zoom effect on hover */
+}
+ 
+.icon-link:active {
+     transform: scale(0.95); /* Shrink slightly when clicked */
+}
+
+
+
 .logo a {
     font-family: var(--abril);
     font-size: 2rem;
@@ -128,6 +149,10 @@ li.dropdown {
     text-align: left;
 }
 
+.icon-link .mobile-text {
+     display: none; /* Default: hide the text */
+}
+
 
 /* Navbar Toggle */
 .navbar-toggle {
@@ -155,7 +180,7 @@ li.dropdown {
 }
 
 /* Responsive Styles */
-@media (max-width: 488px) {
+@media (max-width: 500px) {
     .buttons ul{
         display: none; /* Hide buttons on small screens */
         flex-direction: column; /* Stack vertically */
@@ -163,9 +188,10 @@ li.dropdown {
         width: 100%; /* Full width */
         background-color: var(--dark-brown);
         position: absolute;
-        top: 200px !important; /* Adjust based on your navbar height */
+        top: 50px !important;
         left: 0;
-        padding: 1.5rem 2rem; /* Padding for the dropdown */
+        padding: 1.5rem 2rem; 
+        transition: ease 1.2s;
     }
 
     .buttons.active ul {
@@ -200,6 +226,14 @@ li.dropdown {
         font-size: 1.5rem !important;
     }
 
+    .icon-link i {
+     display: none; /* Hide the icon on mobile */
+     }
+
+     .icon-link .mobile-text {
+          display: inline-block; /* Show the text on mobile */
+     }
+
 }
 
 @media (max-width: 820px) {
@@ -210,7 +244,7 @@ li.dropdown {
         width: 100%; /* Full width */
         background-color: var(--dark-brown);
         position: absolute;
-        top: 50px !important; /* Adjust based on your navbar height */
+        top: 50px; 
         left: 0;
         padding: 1.5rem 2rem; /* Padding for the dropdown */
     }
@@ -247,4 +281,13 @@ li.dropdown {
     .logo a {
         font-size: 2rem; /* Adjust this if needed for mobile */
     }
+
+    .icon-link i {
+     display: none; /* Hide the icon on mobile */
+     }
+
+     .icon-link .mobile-text {
+          display: inline-block; /* Show the text on mobile */
+     }
+
 }

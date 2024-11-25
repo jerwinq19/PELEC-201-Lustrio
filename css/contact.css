@@ -146,6 +146,14 @@
           border-radius: 10px;
      }
 
+     .form-container, .contact-details{
+          width: 100%;
+     }
+
+     .myForm button {
+          font-size: 1rem;
+     }
+
      .form-img {
          display: none;
      }
