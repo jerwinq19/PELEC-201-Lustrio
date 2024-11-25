@@ -66,6 +66,7 @@
 
 
 .flip-back {
+
      color: var(--light-brown);
      transform: rotateY(180deg);
 }

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --light-brown: #FFF2D7;
+    --dark-brown: #603F26;
+    --abril: "Abril Fatface", serif;
+    --nunito: "Nunito", sans-serif;
+    --lato: "Lato", sans-serif;
+    --nunito-sans: "nunito-sans", sans-serif;
+    --yellow: #FDCD04;
+}
+
+.reg-page {
+     box-sizing: border-box;
+     width: 100%;
+     background-color: var(--dark-brown);
+     color: var(--light-brown);
+     margin: 0px;
+}
+
+.my-container {
+     display: flex;
+     justify-content: space-between;
+     height: 100vh;
+}
+
+.form-cont {
+     background-color: var(--light-brown);
+     padding: 3vw 5vw;
+     color: var(--dark-brown);
+     font-family: var(--nunito);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.form-cont h1 {
+     font-family: var(--nunito);
+     font-size: 3.5vw;
+     width: 80%;
+     font-weight: 800;
+     margin: 0px;
+}
+
+.form-cont p {
+     font-size: 1.2vw;
+     width: 90%;
+     margin: 0px;
+}
+
+.myform > input {
+     padding: 1vw;
+     border: 3px solid var(--dark-brown);
+     border-radius: 10px;
+     background-color: transparent;
+     font-size: 1.2vw;
+}
+
+.form-cont > form {
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+     font-size: 1.2vw;
+     margin-top: 1.5rem;
+}
+
+.form-cont button {
+     padding: 1.2vw;
+     margin-top: 10px;
+     background-color: var(--dark-brown);
+     border: none;
+     color: var(--light-brown);
+     font-size: 1.4vw;
+     font-family: var(--nunito);
+     font-weight: 800;
+     border: 3px solid var(--dark-brown);
+     border-radius: 10px;
+     margin-bottom: 1rem;
+}
+
+.myform a{
+     text-decoration: none;
+     color: var(--light-brown);
+}
+
+.login-now a {
+     color: var(--dark-brown);
+}
+
+.login-now {
+     margin-top: 10px;
+     text-align: center;
+}
+
+.reg-img {
+     width: 50%;
+     height:100vh;
+     background-image: url('/images/regsiter-pic.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.line {
+     margin-top: 20px;
+     border-bottom: 3px solid var(--dark-brown);
+}
+
+/* MEDIA QUERIES */
+
+/* Mobile: max-width 480px */
+@media (max-width: 500px) {
+
+     .my-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: var(--light-brown);
+          background-image: none !important;
+     }
+
+     .form-cont {
+          margin:0px !important;
+          width: 80% !important;
+          height: auto;
+          padding: 2rem;
+          background-color: transparent;
+     }
+
+     .reg-img {
+          display: none;
+     }
+
+     .form-cont h1 {
+          font-size: 5vw !important; 
+          width: 100%;
+     }
+
+     .myform label ,  .inline-box a{
+          font-size: 0.5 !important;
+     }
+
+     .myform > input {
+          font-size: 1rem;
+          padding: 0.8rem !important;
+     }
+     
+     .form-cont button {
+          font-size: 4vw; 
+          padding: 2vw;
+     }
+}
+
+
+/* Tablet: max-width 768px */
+@media (max-width: 768px) {
+
+     .my-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-image: url('/images/regsiter-pic.png');
+          background-repeat: no-repeat;         background-size: cover;
+          background-position: top;
+     }
+
+     .reg-img {
+          display: none;
+     }
+
+     .form-cont {
+          /* margin-top: 8rem; */
+          width:60%;
+          padding: 1rem;
+          background: rgba(255, 242, 215, 0.7);
+          backdrop-filter: saturate(10%) blur(100px);
+          border: 3px solid var(--dark-brown);
+          border-radius: 20px;
+     }
+
+     .form-cont h1 {
+          font-size: 2.5rem; 
+          width: 100%;
+     }
+
+     .form-cont p {
+          font-size: 1rem;
+          width: 100%;
+     }
+
+     .myform label ,  .inline-box a{
+          font-size: 1rem;
+     }
+
+     .myform > input {
+          font-size: 1rem;
+          padding: 1.2rem;
+     }
+     
+     .form-cont button {
+          font-size: 1rem; 
+          padding: 1.2vw;
+     } 
+}
