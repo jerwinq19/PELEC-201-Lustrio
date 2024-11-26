@@ -31,6 +31,7 @@
 
 .flip-card:hover .flip-inner {
      transform: rotateY(180deg);
+     cursor: pointer;
 }
 
 /* Position the front and back side */
