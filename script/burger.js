@@ -4,11 +4,13 @@ document.getElementById('navbar-toggle').addEventListener('click', function() {
      buttonsContainer.classList.toggle('active'); // Toggle active class to show/hide links
 });
  
- // Change navbar toggle icon
+// Change navbar toggle icon
 function myFunction(x) {
      x.classList.toggle("change");
 }
  
+
+
  // Initialize Swiper
 const swiper = new Swiper('.slider-wrapper', {
      loop: true,
@@ -42,13 +44,14 @@ const swiper = new Swiper('.slider-wrapper', {
      },
 });
  
- // Toggle dropdown menu visibility
+// Toggle dropdown menu visibility
 function dropDown() {
      const dropdown = document.getElementById("myDropdown");
      dropdown.classList.toggle("show");
 }
- 
- // Close dropdown if clicking outside
+
+
+// Close dropdown if clicking outside
 window.onclick = function (e) {
      if (!e.target.matches('.dropbtn')) {
          const dropdown = document.getElementById("myDropdown");

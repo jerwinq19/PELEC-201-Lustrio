@@ -67,21 +67,13 @@ body {
 .icon-link i{
      display: inline-block; /* Makes the icon clickable */
      text-decoration: none; /* Removes the underline */
-     color: var(--dark-brown); /* Icon color */
+     color: var(--dark-brown);
      font-size: 2rem;
      transition: color 0.3s ease, transform 0.2s ease;
      padding-left: 1rem; 
      border-left: 2px solid var(--dark-brown);
 }
  
-.icon-link:hover {
-     color: var(--light-brown); /* Change color on hover */
-     transform: scale(1.1); /* Slight zoom effect on hover */
-}
- 
-.icon-link:active {
-     transform: scale(0.95); /* Shrink slightly when clicked */
-}
 
 
 

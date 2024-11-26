@@ -51,6 +51,7 @@
 }
 
 
+
 .col-2, .col-3{
     display: flex;
     flex-direction: column;
@@ -71,7 +72,29 @@
     font-size: 1.2rem;
     font-family: var(--lato);
     font-weight: 400;
+    position: relative;
+
 }
+
+.col-2 a::before, .col-3 a::before {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 2px;
+     border-radius: 4px;
+     background-color: var(--light-brown);
+     bottom: 0;
+     left: 0;
+     transform-origin: right;
+     transform: scaleX(0);
+     transition: transform .3s ease-in-out;
+}
+
+.col-2 a:hover:before, .col-3 a:hover:before {
+     transform-origin: left;
+     transform: scaleX(1);
+}
+
 
 .hr-line {
     margin: 0.8rem 0rem 0rem 0rem;
