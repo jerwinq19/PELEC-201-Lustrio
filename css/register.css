@@ -96,7 +96,7 @@
 .reg-img {
      width: 50%;
      height:100vh;
-     background-image: url('./images/regsiter-pic.png');
+     background-image: url('../images/regsiter-pic.png');
      background-repeat: no-repeat;
      background-size: cover;
 }
@@ -161,7 +161,7 @@
           justify-content: center;
           align-items: center;
           height: 100vh;
-          background-image: url('./images/regsiter-pic.png');
+          background-image: url('../images/regsiter-pic.png');
           background-repeat: no-repeat;         background-size: cover;
           background-position: top;
      }
