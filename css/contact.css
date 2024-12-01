@@ -86,6 +86,8 @@
      border-radius: 0.5rem;
      border: 2px solid var(--dark-brown);
      background-color: var(--light-brown);
+     font-size: 1rem;
+     font-weight: 600;
 }
 
 .myForm textarea{
@@ -93,6 +95,9 @@
      border-radius: 0.5rem;
      border: 2px solid var(--dark-brown);
      background-color: var(--light-brown);
+     padding: 0.5rem;
+     font-size: 1rem;
+     font-weight: 600;
 }
 
 .myForm button {
@@ -101,19 +106,27 @@
      padding: 0.5rem;
      width: 50%;
      background-color: var(--dark-brown);
-     border: none;
+     border: 3px solid var(--dark-brown);
      color: var(--light-brown);
      font-family: var(--lato);
-     font-size: 1.3vw;
+     font-size: 1rem;
      display: flex; 
      align-items: center; 
      justify-content: center;
      font-family: var(--Lato);
      border-radius: 1rem;
+     font-weight: 600;
 }
  
 .myForm button i {
      margin-left: 0.7rem;
+}
+
+.myForm button:hover {
+     border: 3px solid var(--dark-brown);
+     background-color: var(--light-brown);
+     color: var(--dark-brown);
+     font-weight: 600;
 }
 
 
