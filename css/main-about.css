@@ -1,17 +1,36 @@
-.container-abt {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 3rem 2rem;
-    background-image: url('../images/mission-bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.container-abt, .container-bot {
+     position: relative;
+ }
+ 
+.container-abt::before, .container-bot::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-image: url('../images/local-bg-image.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     opacity: 0.4;
+     z-index: -1;
+}
+ 
+.my-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 2rem;
+     padding: 3rem 2rem;
+     position: relative;
+     z-index: 1; /* Ensure it sits above the pseudo-element */
 }
 
-.container-abt img {
+
+
+.my-container img {
     width: 100%;
     max-width: 400px;
     height: auto;
@@ -48,24 +67,42 @@
 }
 
 /* team section */
+
 .team-cont {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--dark-brown);
-    background-image: url('../images/our-team-bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+     position: relative; /* Ensure positioning for pseudo-element */
+     z-index: 0; /* Ensure stacking context for pseudo-element */
 }
 
+.team-cont::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-image: url('../images/our-team-bg.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     opacity: 0.5;
+}
+
+.my-container-team {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 2rem;
+     padding: 3rem 2rem;
+     position: relative;
+     background-color: var(--dark-brown);
+     z-index: -1; /* Ensure it sits above the pseudo-element */
+}
+
+
 .team-ctn {
-    display: flex;
-    justify-content: center;
     width: 100%;
     padding: 2rem 2rem;
-    flex-direction: column;
 }
 
 .team-ctn h2, .team-ctn p {
@@ -102,17 +139,6 @@
 }
 
 /* bottom */
-.container-bot {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 2rem 2rem;
-    gap: 2rem;
-    background-image: url('../images/local-bg-image.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 .container-bot img {
     width: 100%;
@@ -205,7 +231,7 @@
 
 /* Tablet responsive styling */
 @media (max-width: 820px) {
-    .container-abt {
+    .my-container {
         flex-direction: column-reverse;
         gap: 1rem !important;
         padding: 1rem 2rem;
@@ -235,7 +261,7 @@
         margin: 0px;
     }
 
-    .team-cont {
+    .my-container-team {
         flex-direction: column;
     }
 
