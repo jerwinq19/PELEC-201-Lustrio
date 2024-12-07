@@ -57,6 +57,7 @@
     display: flex;
     flex-direction: column;
     justify-content: baseline;
+    align-items: flex-start;
     gap: 1.5rem;
 }
 
@@ -67,32 +68,30 @@
     font-weight: 500;
 }
 
-.col-2 a, .col-3 a{
-    color: var(--light-brown);
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-family: var(--lato);
-    font-weight: 400;
-    position: relative;
-
+.col-2 a, .col-3 a {
+     color: var(--light-brown);
+     text-decoration: none;
+     font-size: 1.2rem;
+     font-family: var(--lato);
+     font-weight: 400;
+     position: relative;
+     display: inline-block; /* Restrict to the size of the content */
 }
-
+ 
 .col-2 a::before, .col-3 a::before {
-     content: '';
+     content: "";
      position: absolute;
-     width: 100%;
+     bottom: -2px;
+     left: 0; /* Start from the beginning of the <a> tag */
      height: 2px;
-     border-radius: 4px;
-     background-color: var(--light-brown);
-     bottom: 0;
-     left: 0;
-     transform-origin: right;
+     width: 100%; /* Match the <a> tag's width */
+     background: var(--light-brown);
+     border-radius: 50px;
      transform: scaleX(0);
-     transition: transform .3s ease-in-out;
+     transition: transform 0.2s linear;
 }
-
-.col-2 a:hover:before, .col-3 a:hover:before {
-     transform-origin: left;
+ 
+.col-2 a:hover::before, .col-3 a:hover::before {
      transform: scaleX(1);
 }
 
