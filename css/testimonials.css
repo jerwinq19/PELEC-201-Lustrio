@@ -15,9 +15,12 @@
 }
 
 .slider-wrapper {
-  overflow: hidden;
-  max-width: 1200px;
-  margin: 0 70px 55px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+     width: 90%;
+     margin: 0 auto 55px;
 }
 
 .testimonial-bg {

@@ -16,6 +16,8 @@ const swiper = new Swiper('.slider-wrapper', {
      loop: true,
      grabCursor: true,
      spaceBetween: 30,
+     centeredSlides: true,
+
  
      // Pagination bullets
      pagination: {
