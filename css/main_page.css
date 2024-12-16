@@ -21,14 +21,15 @@
     background-color: var(--dark-brown);
     color: var(--light-brown);
     border: 2px solid var(--dark-brown);
-    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .container a:hover {
     background-color: var(--light-brown);
-    border: 2px solid var(--dark-brown);
     color: var(--dark-brown);
-    box-shadow: rgba(96, 63, 38, 1) 0px 3px 8px;
+    border: 2px solid var(--dark-brown);
+
 }
 
 .title {
